@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# Private Variables
+.env
+
 # testing
 /coverage
 

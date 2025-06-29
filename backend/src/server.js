@@ -2,12 +2,12 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 
-const { rateLimiter } = require("./middleware/rateLimiter");
+const { rateLimiter } = require("./middleware/ratelimiter");
 const urlRoutes = require("./routes/url.routes");
 const { initDatabase, pool } = require("./database/connection");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8082;
 
 app.use(cors());
 app.use(express.json());
